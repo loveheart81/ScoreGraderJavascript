@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>TableScores</title>
+</head>
+<body>
+ 
+    
+<div style="text-align: center;">    
+    <input id="outputs" type="number" oninput="grades()">
+    <p id="output"></p>
+</div>
+
+
+
+<script>
+
+function grades() {
+    let score= document.getElementById('outputs').value;
+
+    if(score >= 70 && score <= 100){
+    document.getElementById('output').innerHTML='Grade A'
+    // console.log('A')
+    // console.log(score);
+}
+
+    else if(score >=60 && score<=70){
+    document.getElementById('output').innerHTML='Grade B'
+    // console.log('B')    
+    }
+    else if(score >=50 && score<=60){
+    document.getElementById('output').innerHTML='Grade C'    
+    // console.log('c')    
+    }
+
+    else if(score>=45 && score<=50){
+    document.getElementById('output').innerHTML='Grade D'    
+    // console.log('D')    
+    }
+
+    else if (score>=40 && score<=45){
+    document.getElementById('output').innerHTML='Grade E'    
+    // console.log('E')    
+    }
+
+    else{
+    document.getElementById('output').innerHTML='INVALID'
+        // console.log('INVALID')
+    }
+
+
+}
+
+// let  score=100,
+
+
+</script>
+
+
+</body>
+</html>
